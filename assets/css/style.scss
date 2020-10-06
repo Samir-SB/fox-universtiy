@@ -49,6 +49,7 @@ header {
 
 .boxes {
     color: #fff;
+    // overflow: hidden;
 
     .box:nth-child(2n+1) {
         background: #fd5f00
@@ -59,7 +60,7 @@ header {
     }
 
     .box--icon {
-        font-size: 80px;
+        width: 60px;
     }
 
 }
