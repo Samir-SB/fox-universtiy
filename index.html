@@ -17,10 +17,114 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h2>test</h2>
-      <i class="fa fa-user"></i>
-    </div>
+    <header>
+      <div class="container">
+        <div class="top-header">
+          <img src="./assets/images/logo.png" alt="logo" />
+          <div class="social-media">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="dropdownId"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Dropdown</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- banner  -->
+    <section id="banner">
+      <div class="container">
+        <h2 class="title">University Needs Complete Solution</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur illo inventore optio
+          temporibus? Quos nostrum tenetur perferendis voluptatum
+        </p>
+
+        <a href="#" class="btn btn-primary"> Contact Us</a>
+      </div>
+    </section>
+    <!-- end banner  -->
+
+    <section class="boxes">
+      <div class="box">
+        <i class="box--icon fa fa-user"></i>
+        <h3 class="box--title">Certified Teachers</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero
+          eum repellendus sapiente pariatur accusamus sequi.
+        </p>
+      </div>
+
+      <div class="box">
+        <i class="box--icon fa fa-user"></i>
+        <h3 class="box--title">Certified Teachers</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero
+          eum repellendus sapiente pariatur accusamus sequi.
+        </p>
+      </div>
+
+      <div class="box">
+        <i class="box--icon fa fa-user"></i>
+        <h3 class="box--title">Certified Teachers</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero
+          eum repellendus sapiente pariatur accusamus sequi.
+        </p>
+      </div>
+    </section>
     <!-- scripts  -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
