@@ -1,3 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 header {
   height: 130px;
 }
@@ -6,12 +10,17 @@ header .top-header {
   height: 60px;
 }
 
-.social-media {
+header .social-media {
   width: 100px;
 }
 
-.social-media i {
+header .social-media i {
   font-size: 20px;
+}
+
+header .navbar {
+  height: 70px;
+  background-color: #0d1128 !important;
 }
 
 #banner {
@@ -37,6 +46,15 @@ header .top-header {
 
 .swiper-container .slide-content h2 {
   font-size: 3rem;
+}
+
+.swiper-container .slide-content a.btn {
+  background-color: #fd5f00;
+  border-radius: 50px;
+  border-style: none;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  font-size: 1.1rem;
 }
 
 .swiper-container .swiper-pagination {
