@@ -1,0 +1,240 @@
+:root {
+  --bg-lightgrey: #f7f7f7;
+  --bg-brown: #fd5f00;
+  --bg-brown-darken: #0d1128;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', Arial, Tahoma, Verdana, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #535353;
+}
+
+#faculties {
+  width: 100%;
+}
+
+.section-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+ul.list-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  /* justify-content: space-between; */
+  /* border: 1px solid salmon; */
+}
+
+.list-item {
+  list-style: none;
+  position: relative;
+  background: #f7f7f7;
+  /* margin-top: 1rem; */
+  overflow: hidden;
+  /* height: 204px; */
+  margin: 0.5rem;
+}
+
+.svg-icon {
+  width: 70px;
+}
+
+.svg-icon path {
+  fill: red !important;
+}
+
+.list-item:hover .link::before {
+  height: 1rem;
+}
+
+.list-item:hover .link::after {
+  height: 100%;
+}
+
+.list-item:hover .content-title {
+  color: #fff;
+}
+
+.list-content {
+  width: 100%;
+}
+
+.list-content .link {
+  /* border: 1px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  z-index: 20;
+}
+
+.list-content .link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background: #b7924b;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.list-content .link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #0d1128;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.content-icon {
+  margin-top: 1.5rem;
+  text-align: center;
+  z-index: 20;
+}
+
+.content-icon svg {
+  fill: var(--bg-brown);
+  width: 4rem;
+  height: 4rem;
+}
+
+.list-content .content-title {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #453d48;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: 20;
+}
+
+.list-content .content-title::after {
+  content: '';
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  height: 0.5rem;
+  width: 1rem;
+  background: #b7924b;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* Extra Small Screen */
+@media (max-width: 575px) {
+  .section-wrapper {
+    width: 95vw;
+  }
+  ul.list-grid {
+    margin: 1rem 0;
+  }
+  ul.list-grid .list-item {
+    width: calc(100% - 1rem);
+    margin: 2px;
+  }
+  .list-content .link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 76px;
+  }
+  .svg-icon {
+    width: 50px;
+  }
+  .list-content {
+    padding: 0 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .list-content .content-title {
+    margin: 0;
+  }
+  .list-content .content-title::after {
+    display: none;
+  }
+  .content-icon {
+    margin: 0;
+    /* margin: 0 20px; */
+  }
+  .content-icon svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  ul.list-grid {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Small Screen */
+@media (min-width: 576px) {
+  .list-item {
+    width: calc(50% - 1rem);
+    height: 205px;
+  }
+  .list-content .content-title {
+    text-align: center;
+  }
+}
+
+/* Medium screen */
+@media (min-width: 768px) {
+  .list-item {
+    width: calc(33% - 1rem);
+    height: 230px;
+  }
+}
+
+/* Large screen */
+/* Extra Large screen */
+@media (min-width: 1200px) {
+  .section-wrapper {
+    width: 85vw;
+  }
+  .list-item {
+    width: calc(25% - 1rem);
+  }
+}
+/*# sourceMappingURL=faculties.css.map */

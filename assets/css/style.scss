@@ -3,10 +3,37 @@ body {
 }
 
 header {
-    height: 130px;
+    height: 170px;
+    // background: linear-gradient(to bottom, #4b6cb7 0%, #182848 100%);
 
     .top-header {
-        height: 60px;
+        // height: 60px;
+
+        .site-info {
+            display: none;
+            flex-direction: column;
+            padding: 3px 6px;
+            // color: #fff;
+
+            .ar1 {
+                font-size: 2rem;
+            }
+
+            .ar2 {
+                text-align: center;
+                font-size: 1rem;
+            }
+
+            .eng {
+                font-size: 1.4rem;
+            }
+        }
+
+        img {
+            height: 100px;
+            max-height: 100%;
+            // display: none;
+        }
     }
 
     .social-media {
@@ -20,15 +47,32 @@ header {
     .navbar {
         // position: absolute;
         // bottom: 0;
+
         height: 70px;
         background-color: #0d1128 !important;
+
+        .main-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            a {
+                padding: 10px 20px;
+                // font-size: 1.2rem;
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 1.3px;
+            }
+
+            li:hover,
+            li.active {
+                a {
+                    color: #fd5f00;
+                }
+            }
+        }
     }
-
-
-
 }
-
-
 
 // banner ==================
 #banner {
@@ -50,7 +94,6 @@ header {
 
         h2 {
             font-size: 3rem;
-
         }
 
         a.btn {
@@ -75,8 +118,8 @@ header {
     color: #fff;
     // overflow: hidden;
 
-    .box:nth-child(2n+1) {
-        background: #fd5f00
+    .box:nth-child(2n + 1) {
+        background: #fd5f00;
     }
 
     .box:nth-child(2n) {
@@ -86,5 +129,11 @@ header {
     .box--icon {
         width: 60px;
     }
+}
 
+
+// faculties ==========================
+
+#faculties {
+    padding: 60px 0;
 }

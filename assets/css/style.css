@@ -3,11 +3,34 @@ body {
 }
 
 header {
-  height: 130px;
+  height: 170px;
 }
 
-header .top-header {
-  height: 60px;
+header .top-header .site-info {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 3px 6px;
+}
+
+header .top-header .site-info .ar1 {
+  font-size: 2rem;
+}
+
+header .top-header .site-info .ar2 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+header .top-header .site-info .eng {
+  font-size: 1.4rem;
+}
+
+header .top-header img {
+  height: 100px;
+  max-height: 100%;
 }
 
 header .social-media {
@@ -23,8 +46,29 @@ header .navbar {
   background-color: #0d1128 !important;
 }
 
+header .navbar .main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .navbar .main-menu a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+}
+
+header .navbar .main-menu li:hover a,
+header .navbar .main-menu li.active a {
+  color: #fd5f00;
+}
+
 #banner {
   background-color: slategray;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .swiper-container {
@@ -34,8 +78,8 @@ header .navbar {
 .swiper-container div {
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .swiper-container .slide-content {
@@ -66,7 +110,7 @@ header .navbar {
   color: #fff;
 }
 
-.boxes .box:nth-child(2n+1) {
+.boxes .box:nth-child(2n + 1) {
   background: #fd5f00;
 }
 
@@ -77,4 +121,9 @@ header .navbar {
 .boxes .box--icon {
   width: 60px;
 }
+
+#faculties {
+  padding: 60px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
