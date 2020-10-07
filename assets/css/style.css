@@ -51,10 +51,21 @@ header .navbar .main-menu li.active a {
 }
 
 #banner {
-  background-color: slategray;
+  background-color: #000a1a;
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+#banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #0d0e1a;
+  opacity: .4;
 }
 
 .swiper-container {
