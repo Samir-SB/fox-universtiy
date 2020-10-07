@@ -64,8 +64,9 @@ header .navbar .main-menu li.active a {
   left: 0;
   right: 0;
   height: 100%;
-  background-color: #0d0e1a;
-  opacity: .4;
+  background: #2088e6;
+  background: linear-gradient(-100deg, rgba(32, 136, 230, 0) 0%, rgba(53, 53, 53, 0.438) 45%, #000b1b 100%);
+  opacity: .5;
 }
 
 .swiper-container {
@@ -219,5 +220,32 @@ header .navbar .main-menu li.active a {
   height: 0.5rem;
   background-color: var(--clr-golden);
   bottom: 2rem;
+}
+
+#paralax {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 60px;
+  background-image: url(http://lorempixel.com/1400/1000);
+  background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+  background-size: cover;
+  background-position: 0 0;
+  z-index: 0;
+  color: #fff;
+}
+
+#paralax::after {
+  position: absolute;
+  content: '';
+  opacity: .8;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: url(http://lorempixel.com/1400/1000);
+  background-size: cover;
+  z-index: -1;
+  opacity: .2;
 }
 /*# sourceMappingURL=style.css.map */
