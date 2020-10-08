@@ -3,7 +3,7 @@
   --clr-golden: #b7924b;
   --bg-brown-darken: #453d48;
   --nav-bg: #0d112880;
-  --banner-height: 500px;
+  --banner-height: 700px;
 }
 
 body {
@@ -54,9 +54,8 @@ header .navbar .main-menu li.active a {
 
 #banner {
   height: var(--banner-height);
-  background-color: #000a1a;
+  background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-position: center;
   position: relative;
 }
 
@@ -66,9 +65,9 @@ header .navbar .main-menu li.active a {
   left: 0;
   right: 0;
   height: 100%;
-  opacity: .7;
-  background: -webkit-gradient(linear, left top, right top, from(#01040a), color-stop(25%, #161f26), color-stop(48%, rgba(30, 117, 195, 0.3)), color-stop(73%, #161f26), to(#01040a));
-  background: linear-gradient(90deg, #01040a 0%, #161f26 25%, rgba(30, 117, 195, 0.3) 48%, #161f26 73%, #01040a 100%);
+  opacity: 0;
+  background: -webkit-gradient(linear, right bottom, left top, from(#03030317), color-stop(80%, #000205a9), to(#000205));
+  background: linear-gradient(to left top, #03030317 0%, #000205a9 80%, #000205 100%);
 }
 
 .swiper-container {
@@ -88,12 +87,14 @@ header .navbar .main-menu li.active a {
   height: auto;
   color: #fff;
   background-color: #011b3a3a;
+  background-color: #9ac5f927;
   padding: 30px;
   border-radius: 8px;
 }
 
 .swiper-container .slide-content h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .swiper-container .slide-content a.btn {
