@@ -3,6 +3,7 @@
   --clr-golden: #b7924b;
   --bg-brown-darken: #453d48;
   --nav-bg: #0d112880;
+  --banner-height: 500px;
 }
 
 body {
@@ -30,6 +31,7 @@ header .social-media i {
 header .navbar {
   height: 70px;
   background-color: #0d1128 !important;
+  background-color: #1a456d !important;
 }
 
 header .navbar .main-menu {
@@ -51,8 +53,8 @@ header .navbar .main-menu li.active a {
 }
 
 #banner {
+  height: var(--banner-height);
   background-color: #000a1a;
-  background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -64,13 +66,13 @@ header .navbar .main-menu li.active a {
   left: 0;
   right: 0;
   height: 100%;
-  background: #2088e6;
-  background: linear-gradient(-100deg, rgba(32, 136, 230, 0) 0%, rgba(53, 53, 53, 0.438) 45%, #000b1b 100%);
-  opacity: .5;
+  opacity: .7;
+  background: -webkit-gradient(linear, left top, right top, from(#01040a), color-stop(25%, #161f26), color-stop(48%, rgba(30, 117, 195, 0.3)), color-stop(73%, #161f26), to(#01040a));
+  background: linear-gradient(90deg, #01040a 0%, #161f26 25%, rgba(30, 117, 195, 0.3) 48%, #161f26 73%, #01040a 100%);
 }
 
 .swiper-container {
-  height: 700px;
+  height: var(--banner-height);
 }
 
 .swiper-container div {
@@ -105,20 +107,14 @@ header .navbar .main-menu li.active a {
 }
 
 .swiper-container .swiper-pagination {
+  bottom: 2rem;
   position: absolute;
-  height: 40px;
+  height: 20px;
 }
 
 .swiper-container .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
-  background-color: salmon;
-  opacity: .8;
-}
-
-.swiper-container .swiper-pagination-bullet-active {
-  background-color: #0d1128;
-  opacity: 1;
 }
 
 .boxes {
